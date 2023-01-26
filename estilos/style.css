@@ -40,8 +40,10 @@ section#login{
     border-radius: 20px;
     overflow: hidden;
     height: 500px;
-    width: 70vw;
+    width: 60vw;
     box-shadow: 0px 0px 10px hsla(0, 0%, 0%, 0.450);
+
+    
 }
 
 div#imagem{
