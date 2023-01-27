@@ -16,6 +16,7 @@
 }
 
 :root{
+    --cor: #94cfcd;
     --cor0: #58c3c0;
     --cor1: #49a09d;
     --cor2: #306866;
@@ -43,7 +44,7 @@ section#login{
     background-color: white;
     border-radius: 20px;
     overflow: hidden;
-    height: 500px;
+    height: 515px;
     width: 60vw;
     box-shadow: 0px 0px 10px hsla(0, 0%, 0%, 0.450);
 
@@ -68,14 +69,40 @@ div#formulario > h1{
 }
 div#formulario > p{
     font-size: 0.8em;
+    text-indent: 20px;
+    text-align: justify;
+    margin-bottom: 10px;
 }
 
 form > div.campo{
     background-color: var(--cor3);
     display: block;
     height: 40px;
-    border-radius: 5px;
+    border-radius: 8px;
     margin: 5px 0px;
+    border: 2px solid var(--cor3);
+}
+
+div.campo > label > span{
+    /* background-color: black; */
+    color: white;
+    height: 40px;
+    font-size: 2em;
+    padding: 5px;
+}
+
+div.campo > input{
+    background-color: var(--cor);
+    border-radius: 8px;
+    font-size: 1em;
+    width: calc(100% - 46.4px);
+    height: 100%;
+    transform: translateY(-12px);
+    border: 0px;
+}
+
+div.campo > input:focus-within{
+    background-color: white;
 }
 
 form > input[type=submit]{
