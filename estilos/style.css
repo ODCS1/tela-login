@@ -2,6 +2,7 @@
 
 /* 
     Paleta de Cores:
+    verde + claro: #58c3c0;
     Verde: #49a09d
     verde + escuro: #306866
     Lilás: #5f2c82
@@ -15,6 +16,7 @@
 }
 
 :root{
+    --cor0: #58c3c0;
     --cor1: #49a09d;
     --cor2: #306866;
     --cor3: #5f2c82;
@@ -68,13 +70,24 @@ div#formulario > p{
     font-size: 0.8em;
 }
 
+form > div.campo{
+    background-color: var(--cor3);
+    display: block;
+    height: 40px;
+    border-radius: 5px;
+    margin: 5px 0px;
+}
+
 form > input[type=submit]{
     display: block;
     width: 100%;
+    height: 40px;
     padding: 3px;
     font-size: 1em;
     background-color: var(--cor1);
-    border: 1px solid var(--cor1);
+    color: white;
+    border: none;
+    border-radius: 5px;
 }
 form > input[type=submit]:hover{
     background-color: var(--cor2);
@@ -84,12 +97,21 @@ form > input[type=submit]:hover{
 form > a.botao{
     display: block;
     text-decoration: none;
+    color: var(--cor0);
+    border: 1px solid var(--cor2);
+    font-size: 1em;
     width: 100%;
+    height: 40px;
     text-align: center;
     align-items: center;
     margin-top: 5px;
+    padding-top: 5px;
+    border-radius: 5px;
 }
 form > a.botao:hover{
     background-color: var(--cor2);
 }
 
+form > a.botao > span{
+    font-size: 0.8em;
+}
